@@ -1,3 +1,3 @@
 class IntValidator:
-    def is_valid(self, value):
-        return True
+    def is_valid(self, value: int) -> bool:
+        return isinstance(value, int)

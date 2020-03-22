@@ -13,8 +13,8 @@ def test_with_good_value(int_validator, value):
 
 
 def test_with_string(int_validator):
-    assert int_validator.is_valid("TOTO")
+    assert not int_validator.is_valid("TOTO")
 
 
 def test_with_float(int_validator):
-    assert int_validator.is_valid(1.2)
+    assert not int_validator.is_valid(1.2)
