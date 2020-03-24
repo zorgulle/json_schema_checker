@@ -2,7 +2,6 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-
 class List:
     def __init__(self, possible_types):
         self._types = possible_types
