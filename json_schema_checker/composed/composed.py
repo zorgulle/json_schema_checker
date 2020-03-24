@@ -14,10 +14,11 @@ class List:
         :return:
         """
 
+        is_valid = False
         for value in values:
             if any(t.is_valid(value) for t in self._types):
-                continue
+                is_valid = True
             else:
                 logger.info("%s is not one of types %s" % (str(value), str(self._types)))
-                return False
-        return True
+                is_valid = False
+        return is_valid
