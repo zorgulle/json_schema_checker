@@ -2,7 +2,7 @@ import pytest
 from random import randint, choices
 from string import digits, ascii_letters
 
-from json_schema_checker.validators import IntValidator, StringValidator
+from json_schema_checker.validators import Int, StringValidator
 from json_schema_checker.validators.validators import SimpleValidator, ValidatorTypeUndefinedException
 
 @pytest.fixture()
@@ -14,7 +14,7 @@ def simple_validator_without_type():
 
 @pytest.fixture()
 def int_validator():
-    return IntValidator()
+    return Int()
 
 @pytest.fixture()
 def string_validator():

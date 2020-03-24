@@ -14,7 +14,7 @@ class SimpleValidator:
 
         return super().__new__(cls, *args, **kwargs)
 
-class IntValidator(SimpleValidator):
+class Int(SimpleValidator):
     type = int
 
 class StringValidator(SimpleValidator):

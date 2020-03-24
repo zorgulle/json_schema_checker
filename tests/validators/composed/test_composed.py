@@ -1,10 +1,10 @@
 from json_schema_checker.composed import List
-from json_schema_checker.validators import IntValidator
+from json_schema_checker.validators import Int
 import pytest
 
 @pytest.fixture()
 def list_int():
-    return List([IntValidator()])
+    return List([Int()])
 
 from random import randint
 

@@ -1,2 +1,2 @@
-from .validators import IntValidator
+from .validators import Int
 from .validators import StringValidator
