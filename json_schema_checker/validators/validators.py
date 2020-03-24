@@ -17,5 +17,5 @@ class SimpleValidator:
 class Int(SimpleValidator):
     type = int
 
-class StringValidator(SimpleValidator):
+class String(SimpleValidator):
     type = str
